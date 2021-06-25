@@ -1,7 +1,7 @@
 box.cfg{
     listen = 3013,
-    wal_dir='xlog',
-    snap_dir='snap',
+    wal_dir='/tmp/xlog',
+    memtx_dir='/tmp/memtx',
 }
 
 box.once("init", function()

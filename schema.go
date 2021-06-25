@@ -135,7 +135,7 @@ func (conn *Connection) loadSchema() (err error) {
 			opts := row[4].(map[interface{}]interface{})
 			var ok bool
 			if index.Unique, ok = opts["unique"].(bool); !ok {
-				/* see bug https://github.com/tarantool/tarantool/issues/2060 */
+				/* see bug https://github.com/kokizzu/tarantool/issues/2060 */
 				index.Unique = true
 			}
 		default:
